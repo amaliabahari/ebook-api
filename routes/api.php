@@ -25,3 +25,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Route::delete('/Book/{id}', [BookController::class,'destroy']);
 
 Route::resource('Book', BookController::class)->except ('edit','create');
+Route::resource('Author', AuthorController::class)->except ('edit','create');
